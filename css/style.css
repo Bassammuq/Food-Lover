@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.primary-text{
+    color: #e4b95b;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+/*Header Start*/
+header{
+    height: 100vh;
+    background: url(../img/home_bg.jpeg) center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#navbar img{
+width: 80px;
+margin-left: 100px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+ border-bottom: 2px solid #e4b95b;
+}
+.content{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 40px;
+    color: white;
+}
+.content p{
+    margin: 20px 0;
+    color: white;
+    font-weight: 600;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    
+}
+header *{
+    z-index: 10;
+}
+.btn-primary{
+    color: white;
+   
+    border: 1px solid white;
+}
+.btn-primary:hover,
+.btn-secondary:hover{
+    background: #e4b95b;
+    color: #fff;
+}
+/*Header End*/
+
+/*About Start*/
+.container{
+    
+    max-width: 1100px;
+    margin: auto;
+}
+
+#about{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.title h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #383848;
+}
+.title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content img{
+    width: 450px;
+}
+.about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.btn-secondary{
+    color: white;
+    background: #383848;
+    margin-top: 20px;
+}
+
+
+
+/*About End*/
+/*Offers Start*/
+#offers{
+  
+   display: flex;
+   justify-content: center;
+   background:url(../img/offer-background.jpg)center center/cover fixed;
+    
+}
+#offers .title h2{
+    color: #e4b95b;
+}
+#offers .title p{
+    color: #fff;
+    font-weight: 500;
+}
+.offers-items{
+   
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+   
+}
+#offers .offers-items img{
+   
+    width: 200px;
+}
+#offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+#offers .offers-items p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+#offers .offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+/*Offers End*/
+/*menu Start*/
+#menu{
+    background: #f4f4f4;
+    padding: 5rem 0;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.menu-items .menu-item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+.menu-item h3{
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+}
+.menu-item span{
+    position: absolute;
+    right: 0;
+}
+.menu-item p{
+    margin-top: 10px;
+}
+
+
+#menu .btn{
+    background: #e4b95b;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#menu .btn:hover{
+    background: #383848;
+    
+}
+/*menu End*/
+/*daytime Start*/
+#daytime{
+    
+    background: url(../img/daytime_bg.jpeg) center center/cover fixed no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.daytime-items{
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.daytime-item h3{
+font-size: 32px;
+
+margin: 20px 0;
+margin-bottom: 10px;
+}
+.daytime-item p{
+    font-weight: 600;
+}
+/*daytime End*/
+/*Gallery Start*/
+#gallery{
+    padding: 6rem 0 6rem;
+    background: url(../img/offer-background.jpg) center center/cover  no-repeat;
+}
+.img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallery .img-gallery img:hover{
+  
+    opacity: 1;
+}
+#gallery .title h2{
+    padding: 90px 0 0;
+    color: #fff;
+}
+/*Gallery End*/
+
+/*Contact Start*/
+#contact{
+    padding: 5rem 0;
+    background: #f4f4f4;
+
+}
+#contact .container{
+    max-width: 900px;
+}
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.contact-content .contact-info{
+    width: 50%;
+    
+}
+.contact-content .contact-info h3{
+   margin: 20px 0 10px;
+   font-size: 20px;
+   font-weight: 900;
+}
+.contact-content .contact-info i{
+   margin-right: 7px;
+   color: #e4b95b;
+ }
+ .contact-content .contact-info p{
+    color: #9a9a9a;
+    margin-bottom: 10px;
+  }
+
+.contact-content .contact-info a i{
+   background: #383848;
+   color: #fff;
+   padding: 7px;
+   border-radius: 50%;
+ }
+
+ .contact-content .contact-info a i:hover{
+    background: #e4b95b;
+    color: #383848;
+ }
+form{
+    width: 50%;
+ }
+ form input,
+ textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+ }
+ #contact .btn{
+    background: #e4b95b;
+    color: #fff;
+    cursor: pointer;
+ }
+ #contact .btn:hover{
+   background: #383848;
+ }
+ footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background: #383848;
+    text-align: center;
+    margin: auto;
+    
+ }
+ footer p{
+  color: #fff;
+  
+ }
+ footer a{
+    color: #fff;
+ }
+/*Contact End*/
